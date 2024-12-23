@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/originals/fe/9e/4d/fe9e4dd516e3b295b3784372725514e4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://i.pinimg.com/originals/fe/9e/4d/fe9e4dd516e3b295b3784372725514e4.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -18,17 +18,21 @@ ul {
 }
 ul li {
     display: inline-block;
+    margin: 0 10px;
 }
 ul li a {
     text-decoration: none;
-    color: aliceblue;
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.6s ease;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+    background-color: transparent;
 }
 ul li a:hover {
-    background-color: blue;
-    color: brown;
+    background-color: #00BFFF;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
 }
 .main {
     max-width: 1200px;
@@ -43,38 +47,44 @@ ul li a:hover {
     text-align: center;
 }
 .title h1 {
-    color: white;
-    font-size: 50px;
+    color: #f1f1f1;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 .button {
     position: absolute;
-    top: 58%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 .btn {
-    border: 1px solid white;
-    padding: 10px 30px;
-    color: white;
+    border: 2px solid #00BFFF;
+    padding: 12px 30px;
+    color: #00BFFF;
     text-decoration: none;
-    transition: 0.6s ease;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: all 0.4s ease-in-out;
 }
 .btn:hover {
-    background-color: blue;
-    color: brown;
+    background-color: #00BFFF;
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
     .title h1 {
-        font-size: 40px;
+        font-size: 3rem;
     }
     .btn {
-        padding: 8px 25px;
+        padding: 10px 25px;
     }
     ul li a {
-        padding: 5px 15px;
+        padding: 6px 15px;
     }
 }
 
@@ -89,24 +99,24 @@ ul li a:hover {
         margin: 5px 0;
     }
     .title h1 {
-        font-size: 35px;
+        font-size: 2.5rem;
     }
     .btn {
-        padding: 8px 20px;
-        font-size: 14px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
     .title h1 {
-        font-size: 28px;
+        font-size: 2rem;
     }
     .btn {
-        padding: 6px 15px;
-        font-size: 12px;
+        padding: 8px 15px;
+        font-size: 0.8rem;
     }
     ul li a {
         padding: 5px 10px;
-        font-size: 14px;
+        font-size: 0.9rem;
     }
 }
