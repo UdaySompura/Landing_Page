@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/originals/fe/9e/4d/fe9e4dd516e3b295b3784372725514e4.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover {
+    background-color: blue;
+    color: brown;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+.button {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn {
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.btn:hover {
+    background-color: blue;
+    color: brown;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    header {
+        height: 80vh; /* Reducing header height for smaller screens */
+    }
+
+    .title h1 {
+        font-size: 35px; /* Smaller font size for titles on mobile */
+    }
+
+    ul {
+        float: none;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    ul li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .btn {
+        padding: 8px 20px;
+        font-size: 14px; /* Smaller button padding and font */
+    }
+}
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 25px; /* Even smaller title on very small screens */
+    }
+
+    .button {
+        top: 65%;
+    }
+
+    .btn {
+        padding: 6px 15px;
+        font-size: 12px; /* Further reduce button size */
+    }
+}
