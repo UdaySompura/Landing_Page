@@ -112,11 +112,11 @@ ul li a:hover {
         font-size: 2rem;
     }
     .btn {
-        padding: 8px 15px;
+        padding: 10px 3px;
         font-size: 0.8rem;
     }
     ul li a {
-        padding: 5px 10px;
+        /* padding: 0px 10px; */
         font-size: 0.9rem;
     }
 }
