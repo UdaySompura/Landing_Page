@@ -1,3 +1,6 @@
+html,body{
+    height: 100%;
+}
 * {
     margin: 0;
     padding: 0;
@@ -88,7 +91,7 @@ ul li a:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 426px) {
     ul {
         float: none;
         text-align: center;
@@ -102,18 +105,32 @@ ul li a:hover {
         font-size: 2.5rem;
     }
     .btn {
-        padding: 10px 20px;
+        padding: 10px 6px;
         font-size: 0.9rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 376px) {
     .title h1 {
         font-size: 2rem;
     }
     .btn {
-        padding: 10px 3px;
+        padding: 10px 5px;
         font-size: 0.8rem;
+    }
+    ul li a {
+        /* padding: 0px 10px; */
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 321px) {
+    .title h1 {
+        font-size: 2rem;
+    }
+    .btn {
+        padding: 10px 7px;
+        font-size: 0.6rem;
     }
     ul li a {
         /* padding: 0px 10px; */
